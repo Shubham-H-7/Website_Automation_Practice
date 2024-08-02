@@ -26,15 +26,15 @@ public class BaseTest {
             e.printStackTrace();
         }
         // Access the configuration properties
-       // url = ConfigLoad.getUrl();
-        test_url = ConfigLoad.getTest_url();
+       url = ConfigLoad.getUrl();
+       // test_url = ConfigLoad.getTest_url();
 
     }
     @BeforeMethod
     public void setUp() throws IOException {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get(test_url);
+        driver.get(url);
 
     }
 

@@ -21,8 +21,6 @@ public class LoginPage {
     public WebElement signInSubmit;
 
     public LoginPage(WebDriver driver) {
-        this.driver = driver;
-
         PageFactory.initElements(driver, this);
     }
 

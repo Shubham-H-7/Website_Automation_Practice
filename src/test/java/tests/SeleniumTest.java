@@ -10,7 +10,6 @@ public class SeleniumTest extends BaseTest {
     static String username;
     static String password;
 
-
     @BeforeMethod
     public void useConfigTest() {
         ConfigLoad config = new ConfigLoad();

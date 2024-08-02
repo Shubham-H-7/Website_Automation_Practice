@@ -42,24 +42,8 @@ public class ConfigLoad {
     public static String getTest_url(){
         return test_url;
     }
+
     public static String getCustID(){
         return custID;
     }
 }
-
-
-
-//    @BeforeClass
-//    public void useConfig() {
-//        ConfigLoad config = new ConfigLoad();
-//        try {
-//            config.loadProperties();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//
-//        username = ConfigLoad.getUsername();
-//        System.out.println(username);
-//        password = ConfigLoad.getPassword();
-//        System.out.println(password);
-//    }
