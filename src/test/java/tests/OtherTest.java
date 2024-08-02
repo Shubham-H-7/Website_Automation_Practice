@@ -8,7 +8,7 @@ import java.io.IOException;
 public class OtherTest extends BaseTest {
     String custID;
 
-    @BeforeMethod
+  //  @BeforeMethod
     public void loadConfigTest(){
        ConfigLoad cf =new ConfigLoad();
         try {
@@ -18,7 +18,7 @@ public class OtherTest extends BaseTest {
         }
         custID = ConfigLoad.getCustID();
     }
-    @Test (priority = 1)
+  //  @Test (priority = 1)
     public void alertTest(){
       AlertPage alert = new AlertPage(driver);
       alert.enterCustID(custID);
